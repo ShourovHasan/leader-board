@@ -1,0 +1,42 @@
+/* Media Query */
+/* mobile  */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tab Devices */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
